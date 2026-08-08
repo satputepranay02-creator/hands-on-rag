@@ -177,7 +177,11 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01e
 .toc { list-style: none; margin: 36px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
 .toc li { display: flex; align-items: baseline; gap: 18px; padding: 18px 4px; border-bottom: 1px solid var(--line); }
 .toc-num { font-family: var(--mono); font-size: 14px; color: var(--teal); min-width: 26px; }
-.toc-name { font-family: var(--serif); font-size: 18px; color: var(--ink); }
+.toc-name { font-family: var(--serif); font-size: 18px; color: var(--ink); flex: 1; }
+.toc-note { margin-top: 20px; }
+.toc-link { font-size: 13px; font-weight: 600; color: var(--teal); text-decoration: none; white-space: nowrap; border-bottom: 1px solid transparent; }
+.toc-link:hover { border-bottom-color: currentColor; }
+.toc-none { font-size: 13px; color: var(--ink-faint); white-space: nowrap; }
 @media (max-width: 720px) { .toc { grid-template-columns: 1fr; } }
 
 /* ---------- Code section ---------- */
