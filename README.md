@@ -1,7 +1,6 @@
 # Hands-On RAG for Production
 
-Code and Jupyter notebooks for the O'Reilly book *Hands-On RAG for Production*, by Ofer
-Mendelevitch and Forrest Sheng Bao.
+This repository contains the code for the O'Reilly book *Hands-On RAG for Production*, by Ofer Mendelevitch and Forrest Sheng Bao.
 
 <a href="https://www.oreilly.com/library/view/hands-on-rag-for/9798341621701/"><img src="docs/hands-on-rag-front.jpg" width="250" alt="Hands-On RAG for Production book cover"></a>
 
