@@ -1,33 +1,90 @@
 # Hands-on RAG for Production
-# Common dependencies used across multiple chapters
+# All dependencies used across chapters 1-9, in one file
 #
-# For chapter-specific dependencies, see each chapter's requirements.txt
-# Install with: pip install -r requirements.txt
+# Install with: uv pip install -r requirements.txt
+# (or: pip install -r requirements.txt)
+#
+# Resolved and checked on Python 3.13.
 
 # Core
 python-dotenv>=1.0.0
 requests>=2.31.0
-numpy>=1.24.0
+numpy>=1.26.0
 pandas>=2.0.0
+pydantic>=2.7.0
+tqdm>=4.65.0
+pyyaml>=6.0.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.25.0
 
 # LLM APIs
 openai>=1.0.0
 anthropic>=0.30.0
+tiktoken>=0.5.0
 
-# LangChain ecosystem (Chapters 1, 4, 7, 8)
+# LangChain ecosystem (Chapters 1, 2, 4, 7, 8, 9)
 langchain~=1.2.0
 langchain-core~=1.2.0
 langchain-openai~=1.1.0
 langchain-community~=0.4.0
-langchain-text-splitters~=0.3.0
+langchain-text-splitters~=1.1
+langchain-classic~=1.0
+langchain-google-genai~=4.2
+langchain-chroma>=1.0.0
+langchain-huggingface>=1.0.0
+langgraph>=1.0.0
 
-# Embeddings (Chapters 2, 3, 8)
-sentence-transformers>=3.0.0
+# LlamaIndex (Chapters 3, 7)
+llama-index>=0.14.0
+llama-index-llms-openai>=0.2.0
+llama-index-llms-anthropic>=0.2.0
 
-# Document processing
+# Agents (Chapter 7)
+# crewai resolves to 0.95.x because graphrag (Chapter 9) blocks crewai 1.x
+crewai>=0.80.0
+tavily-python>=0.5.0
+
+# Document processing (Chapters 1, 2, 3, 7, 8)
 pypdf>=4.0.0
+PyPDF2>=3.0.0
 pymupdf>=1.24.0
+python-docx>=1.1.0
+docling>=2.0.0
+pillow>=10.0.0
 
-# Jupyter
-jupyter>=1.0.0
-ipykernel>=6.0.0
+# NLP, embeddings and models (Chapters 2, 3, 6, 8)
+spacy>=3.8.0
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+sentence-transformers>=3.0.0
+# Pinned by the book's notebooks; the HHEM hallucination model expects transformers 4.x
+transformers==4.57.6
+torch>=2.0.0
+scikit-learn>=1.3.0
+matplotlib>=3.8.0
+datasets>=3.0.0
+
+# Evaluation metrics (Chapter 6)
+sacrebleu>=2.4.0
+rouge>=1.0.0
+
+# Vector stores and databases (Chapters 1, 2, 4, 7, 8, 9)
+lancedb>=0.25.0
+faiss-cpu>=1.8.0
+chromadb>=1.1.1
+sqlite-vec>=0.1.0
+psycopg2-binary>=2.9.0
+pgvector>=0.3.0
+redis>=5.0.0
+neo4j>=5.27.0
+
+# Redaction (Chapter 4)
+presidio-analyzer>=2.2.0
+presidio-anonymizer>=2.2.0
+
+# GraphRAG (Chapter 9)
+graphrag>=0.7.0
+
+# Audio transcription (Chapter 8)
+deepgram-sdk==5.3.0
