@@ -1,0 +1,108 @@
+        Product  Price               Rating
+                   USD       EUR           
+0       Model-A   $299   €257.25  4.5 Stars
+1       Model-B   $449   €386.95  4.2 Stars
+2       Model-C   $199   €171.50  3.9 Stars
+3       Model-X   $899   €774.77  4.8 Stars
+4     Model-Pro  $1299  €1122.15  4.9 Stars
+5    Model-Lite   $149   €128.70  3.5 Stars
+6     Model-Air   $699   €603.75  4.4 Stars
+7     Model-Eco    $99    €85.52  3.1 Stars
+8     Model-Max  $1099   €949.20  4.7 Stars
+9     Model-Std   $249   €215.04  4.0 Stars
+10  Model-Ultra  $1599  €1381.13  4.8 Stars
+11   Model-Mini   $349   €301.44  4.1 Stars
+12     Model-Go   $179   €154.60  3.7 Stars
+13  Model-Titan  $1999  €1726.63  4.9 Stars
+{
+    "('Product', '')": {
+        "0": "Model-A",
+        "1": "Model-B",
+        "2": "Model-C",
+        "3": "Model-X"
+    },
+    "('Price', 'USD')": {
+        "0": "$299",
+        "1": "$449",
+        "2": "$199",
+        "3": "$899"
+    },
+    "('Price', 'EUR')": {
+        "0": "\u20ac257.25",
+        "1": "\u20ac386.95",
+        "2": "\u20ac171.50",
+        "3": "\u20ac774.77"
+    },
+    "('Rating', '')": {
+        "0": "4.5 Stars",
+        "1": "4.2 Stars",
+        "2": "3.9 Stars",
+        "3": "4.8 Stars"
+    }
+}
+|    | ('Product', '')   | ('Price', 'USD')   | ('Price', 'EUR')   | ('Rating', '')   |
+|---:|:------------------|:-------------------|:-------------------|:-----------------|
+|  0 | Model-A           | $299               | €257.25            | 4.5 Stars        |
+|  1 | Model-B           | $449               | €386.95            | 4.2 Stars        |
+|  2 | Model-C           | $199               | €171.50            | 3.9 Stars        |
+|  3 | Model-X           | $899               | €774.77            | 4.8 Stars        |
+|  4 | Model-Pro         | $1299              | €1122.15           | 4.9 Stars        |
+|  5 | Model-Lite        | $149               | €128.70            | 3.5 Stars        |
+|  6 | Model-Air         | $699               | €603.75            | 4.4 Stars        |
+|  7 | Model-Eco         | $99                | €85.52             | 3.1 Stars        |
+|  8 | Model-Max         | $1099              | €949.20            | 4.7 Stars        |
+|  9 | Model-Std         | $249               | €215.04            | 4.0 Stars        |
+| 10 | Model-Ultra       | $1599              | €1381.13           | 4.8 Stars        |
+| 11 | Model-Mini        | $349               | €301.44            | 4.1 Stars        |
+| 12 | Model-Go          | $179               | €154.60            | 3.7 Stars        |
+| 13 | Model-Titan       | $1999              | €1726.63           | 4.9 Stars        |
+
+--- SPLIT INTO 16 CHUNKS (Chunk Size: 100) ---
+
+[CHUNK 1]
+"|    | ('Product', '')   | ('Price', 'USD')   | ('Price', 'EUR')   | ('Rating', '')   |"
+
+[CHUNK 2]
+'|---:|:------------------|:-------------------|:-------------------|:-----------------|'
+
+[CHUNK 3]
+'|  0 | Model-A           | $299               | €257.25            | 4.5 Stars        |'
+
+[CHUNK 4]
+'|  1 | Model-B           | $449               | €386.95            | 4.2 Stars        |'
+
+[CHUNK 5]
+'|  2 | Model-C           | $199               | €171.50            | 3.9 Stars        |'
+
+[CHUNK 6]
+'|  3 | Model-X           | $899               | €774.77            | 4.8 Stars        |'
+
+[CHUNK 7]
+'|  4 | Model-Pro         | $1299              | €1122.15           | 4.9 Stars        |'
+
+[CHUNK 8]
+'|  5 | Model-Lite        | $149               | €128.70            | 3.5 Stars        |'
+
+[CHUNK 9]
+'|  6 | Model-Air         | $699               | €603.75            | 4.4 Stars        |'
+
+[CHUNK 10]
+'|  7 | Model-Eco         | $99                | €85.52             | 3.1 Stars        |'
+
+[CHUNK 11]
+'|  8 | Model-Max         | $1099              | €949.20            | 4.7 Stars        |'
+
+[CHUNK 12]
+'|  9 | Model-Std         | $249               | €215.04            | 4.0 Stars        |'
+
+[CHUNK 13]
+'| 10 | Model-Ultra       | $1599              | €1381.13           | 4.8 Stars        |'
+
+[CHUNK 14]
+'| 11 | Model-Mini        | $349               | €301.44            | 4.1 Stars        |'
+
+[CHUNK 15]
+'| 12 | Model-Go          | $179               | €154.60            | 3.7 Stars        |'
+
+[CHUNK 16]
+'| 13 | Model-Titan       | $1999              | €1726.63           | 4.9 Stars        |'
